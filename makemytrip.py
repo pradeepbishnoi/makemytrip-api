@@ -23,6 +23,7 @@ class MakeMyTrip(object):
     url_browse=""
     flights_data=""
     stoppage=""
+    arrival_time=""
     
     def __init__(self):
         pass
@@ -68,6 +69,8 @@ class MakeMyTrip(object):
             halt= halt + u"   \u2708   " + flights_data[x]['t'] + " ( " + flights_data[x]['du'] + " )"
             if x>0:
                 layover= layover + flights_data[x]['f'] + "  ( " + flights_data[x]['lo'] + " )  "
+            if x==(len(flights_data)-1):
+                self.arrival_time=flights_data[x]['fa'] + " " +flights_data[x]['fat']
         print halt
         return layover
         #return halt
@@ -86,7 +89,7 @@ class MakeMyTrip(object):
             layover=self.get_extra_detail(l[i]['le']) 
             #ToDo
             print l[i]['le'][0]['fd'],  l[i]['le'][0]['fdt'], \
-             u"  --->>  ", l[i]['le'][0]['fa'], l[i]['le'][0]['fat']
+             u"  --->>  ", self.arrival_time
             print "\tStoppage : ", layover
             #print "Arrival : ", l[i]['le'][0]['fa'], l[i]['le'][0]['fat']
             print u"\u2982"*50

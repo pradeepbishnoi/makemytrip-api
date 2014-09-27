@@ -23,3 +23,12 @@ To run the tests locally just do:
     $ python makemytrip.py Chennai Jaipur
 
 ![Output 1](https://raw.githubusercontent.com/pradeepbishnoi/makemytrip-api/master/Sample2.png)
+
+
+
+To Do
+============
+
+  - Add more parameter input support
+  - Expose as an API to be consumed by others 
+  - Get the hotel price data

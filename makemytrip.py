@@ -11,12 +11,10 @@ MakeMyTrip Unofficial API
 # python makemytrip.py Bangalore Jaipur 
 
 import urllib2
-import time
 import json
 import sys 
 import re
-import time
-from datetime import datetime, date
+from datetime import datetime, date, time
 #from browse import Browse
 import mapping as city
 
@@ -85,7 +83,6 @@ class MakeMyTrip(object):
         for i in range(tmp_size):   
             print ""
             print u"\033[1m" + l[i]['le'][0]['an'] , u"\033[0m      \u20B9 \033[92m",  l[i]['af'], "\033[0m  in  ", l[i]['td']
-            #print l[i]['ns'], " Stoppage(s) with Total Journey time :",l[i]['td']
             layover=self.get_extra_detail(l[i]['le']) 
             #ToDo
             print l[i]['le'][0]['fd'],  l[i]['le'][0]['fdt'], \

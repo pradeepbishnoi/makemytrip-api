@@ -1,201 +1,100 @@
-city_code={
-    "bangalore":"BLR"
-    ,"chennai":"MAA"
-    ,"goa":"GOI"
-    ,"delhi":"DEL"
-    ,"mumbai":"BOM"
-    ,"hyderabad":"HYD"
-    ,"pune":"PNQ"
-    ,"kolkata":"CCU"
-    ,"agartala":"IXA"
-    ,"":"AGX"
-    ,"":"AGR"
-    ,"":"AMD"
-    ,"":"AJL"
-    ,"":"IXD"
-    ,"":"ATQ"
-    ,"":"IXU"
-    ,"":"IXB"
-    ,"":"BKK"
-    ,"":"IXG"
-    ,"":"BEP"
-    ,"":"BHU"
-    ,"bhopal":"BHO"
-    ,"":"BBI"
-    ,"":"BHJ"
-    ,"":"CCJ"
-    ,"":"IXC"
-    ,"":"COK"
-    ,"":"CJB"
-    ,"":"CMB"
-    ,"":"DED"
-    ,"":"DHM"
-    ,"":"DIB"
-    ,"":"DMU"
-    ,"":"DIU"
-    ,"":"DXB"
-    ,"":"GAY"
-    ,"":"GOP"
-    ,"":"GAU"
-    ,"":"GWL"
-    ,"":"HBX"
-    ,"":"IMF"
-    ,"indore":"IDR"
-    ,"":"JLR"
-    ,"jaipur":"JAI"
-    ,"":"JSA"
-    ,"":"IXJ"
-    ,"":"JGA"
-    ,"":"IXW"
-    ,"jodhpur":"JDH"
-    ,"":"JRH"
-    ,"":"IXY"
-    ,"":"KNU"
-    ,"":"HJR"
-    ,"":"KLH"
-    ,"":"KUU"
-    ,"":"LTU"
-    ,"":"IXL"
-    ,"":"IXI"
-    ,"":"LKO"
-    ,"":"LUH"
-    ,"":"IXM"
-    ,"":"IXE"
-    ,"":"MYQ"
-    ,"":"NAG"
-    ,"":"NDC"
-    ,"":"ISK"
-    ,"":"PGH"
-    ,"":"IXP"
-    ,"":"PAT"
-    ,"":"PNY"
-    ,"":"PBD"
-    ,"":"IXZ"
-    ,"":"PUT"
-    ,"":"RPR"
-    ,"":"RJA"
-    ,"":"RAJ"
-    ,"":"IXR"
-    ,"":"REW"
-    ,"":"SXV"
-    ,"":"TNI"
-    ,"":"SHL"
-    ,"":"SLV"
-    ,"":"SSE"
-    ,"":"IXS"
-    ,"":"SXR"
-    ,"":"STV"
-    ,"":"TEZ"
-    ,"":"TRZ"
-    ,"":"TIR"
-    ,"":"TRV"
-    ,"":"TCR"
-    ,"":"UDR"
-    ,"ujjain":"UJJ"
-    ,"":"BDQ"
-    ,"varanasi":"VNS"
-    ,"":"VDY"
-    ,"":"VGA"
-    ,"":"VTZ"
-}
-
-cityMap = {
-    "PNY":"Pondicherry"
-    ,"VTZ":"Visakhapatnam"
-    ,"JAI":"Jaipur"
-    ,"SHL":"Shillong"
-    ,"PNQ":"Pune"
-    ,"IXE":"Mangalore"
-    ,"COK":"Cochin"
-    ,"IXC":"Chandigarh"
-    ,"IXD":"Allahabad"
-    ,"IXA":"Agartala"
-    ,"IXB":"Bagdogra"
-    ,"GOP":"Gorakhpur"
-    ,"BBI":"Bhubaneshwar"
-    ,"IXM":"Madurai"
-    ,"PGH":"Pantnagar"
-    ,"IDR":"Indore"
-    ,"IXL":"Leh"
-    ,"IXI":"Lilabari"
-    ,"IXJ":"Jammu"
-    ,"IXG":"Belgaum"
-    ,"GOI":"Goa"
-    ,"RAJ":"Rajkot"
-    ,"BKK":"Bangkok"
-    ,"REW":"Rewa"
-    ,"SXV":"Salem"
-    ,"KNU":"Kanpur"
-    ,"KUU":"Kullu"
-    ,"GWL":"Gwalior"
-    ,"SXR":"Srinagar"
-    ,"IMF":"Imphal"
-    ,"UDR":"Udaipur"
-    ,"JSA":"Jaisalmer"
-    ,"BLR":"Bangalore"
-    ,"CMB":"Colombo"
-    ,"JRH":"Jorhat"
-    ,"UJJ":"Ujjain"
-    ,"BDQ":"Vadodara"
-    ,"TRZ":"Tiruchirapally"
-    ,"VDY":"Vidyanagar"
-    ,"TRV":"Trivandrum"
-    ,"RPR":"Raipur"
-    ,"DMU":"Dimapur"
-    ,"AJL":"Aizawl"
-    ,"KLH":"Kolhapur"
-    ,"JGA":"Jamnagar"
-    ,"ATQ":"Amritsar"
-    ,"SSE":"Sholapur"
-    ,"TCR":"Tuticorin"
-    ,"NAG":"Nagpur"
-    ,"BEP":"Bellary"
-    ,"DED":"Dehradun"
-    ,"LKO":"Lucknow"
-    ,"JDH":"Jodhpur"
-    ,"DXB":"Dubai"
-    ,"VGA":"Vijaywada"
-    ,"JLR":"Jabalpur"
-    ,"DEL":"New Delhi"
-    ,"ISK":"Nasik"
-    ,"SLV":"Shimla"
-    ,"PBD":"Porbandar"
-    ,"GAY":"Gaya"
-    ,"GAU":"Guwahati"
-    ,"STV":"Surat"
-    ,"TIR":"Tirupati"
-    ,"BOM":"Mumbai"
-    ,"MYQ":"Mysore"
-    ,"PAT":"Patna"
-    ,"RJA":"Rajahmundry"
-    ,"AMD":"Ahmedabad"
-    ,"TNI":"Satna"
-    ,"CCJ":"Calicut"
-    ,"HBX":"Hubli"
-    ,"AGX":"Agatti Island"
-    ,"DHM":"Dharamshala"
-    ,"NDC":"Nanded"
-    ,"BHU":"Bhavnagar"
-    ,"AGR":"Agra"
-    ,"TEZ":"Tezpur"
-    ,"BHO":"Bhopal"
-    ,"HJR":"Khajuraho"
-    ,"BHJ":"Bhuj"
-    ,"DIB":"Dibrugarh"
-    ,"CCU":"Kolkata"
-    ,"VNS":"Varanasi"
-    ,"HYD":"Hyderabad"
-    ,"CJB":"Coimbatore"
-    ,"LTU":"Latur"
-    ,"IXY":"Kandla"
-    ,"IXZ":"Port Blair"
-    ,"IXW":"Jamshedpur"
-    ,"DIU":"Diu"
-    ,"IXR":"Ranchi"
-    ,"IXP":"Pathankot"
-    ,"IXU":"Aurangabad"
-    ,"MAA":"Chennai"
-    ,"LUH":"Ludhiana"
-    ,"PUT":"Puttaparthi"
-    ,"IXS":"Silchar"
+city_code = {
+    'kullu': 'KUU'
+    , 'colombo': 'CMB'
+    , 'guwahati': 'GAU'
+    , 'pondicherry': 'PNY'
+    , 'jaipur': 'JAI'
+    , 'pantnagar': 'PGH'
+    , 'raipur': 'RPR'
+    , 'amritsar': 'ATQ'
+    , 'puttaparthi': 'PUT'
+    , 'coimbatore': 'CJB'
+    , 'chennai': 'MAA'
+    , 'khajuraho': 'HJR'
+    , 'dibrugarh': 'DIB'
+    , 'tirupati': 'TIR'
+    , 'jammu': 'IXJ'
+    , 'dehradun': 'DED'
+    , 'shillong': 'SHL'
+    , 'allahabad': 'IXD'
+    , 'cochin': 'COK'
+    , 'dubai': 'DXB'
+    , 'gwalior': 'GWL'
+    , 'belgaum': 'IXG'
+    , 'surat': 'STV'
+    , 'tiruchirapally': 'TRZ'
+    , 'pathankot': 'IXP'
+    , 'madurai': 'IXM'
+    , 'hubli': 'HBX'
+    , 'sholapur': 'SSE'
+    , 'silchar': 'IXS'
+    , 'visakhapatnam': 'VTZ'
+    , 'calicut': 'CCJ'
+    , 'goa': 'GOI'
+    , 'leh': 'IXL'
+    , 'udaipur': 'UDR'
+    , 'bhopal': 'BHO'
+    , 'tezpur': 'TEZ'
+    , 'shimla': 'SLV'
+    , 'bhubaneshwar': 'BBI'
+    , 'bangkok': 'BKK'
+    , 'port blair': 'IXZ'
+    , 'porbandar': 'PBD'
+    , 'diu': 'DIU'
+    , 'vijaywada': 'VGA'
+    , 'bangalore': 'BLR'
+    , 'pune': 'PNQ'
+    , 'lucknow': 'LKO'
+    , 'mumbai': 'BOM'
+    , 'bhuj': 'BHJ'
+    , 'nanded': 'NDC'
+    , 'hyderabad': 'HYD'
+    , 'bagdogra': 'IXB'
+    , 'agatti island': 'AGX'
+    , 'kanpur': 'KNU'
+    , 'gorakhpur': 'GOP'
+    , 'agartala': 'IXA'
+    , 'ujjain': 'UJJ'
+    , 'kandla': 'IXY'
+    , 'dharamshala': 'DHM'
+    , 'latur': 'LTU'
+    , 'agra': 'AGR'
+    , 'ranchi': 'IXR'
+    , 'jamnagar': 'JGA'
+    , 'lilabari': 'IXI'
+    , 'jaisalmer': 'JSA'
+    , 'patna': 'PAT'
+    , 'chandigarh': 'IXC'
+    , 'ludhiana': 'LUH'
+    , 'rajkot': 'RAJ'
+    , 'jabalpur': 'JLR'
+    , 'tuticorin': 'TCR'
+    , 'ahmedabad': 'AMD'
+    , 'vidyanagar': 'VDY'
+    , 'gaya': 'GAY'
+    , 'indore': 'IDR'
+    , 'kolhapur': 'KLH'
+    , 'mangalore': 'IXE'
+    , 'rajahmundry': 'RJA'
+    , 'jamshedpur': 'IXW'
+    , 'salem': 'SXV'
+    , 'aizawl': 'AJL'
+    , 'new delhi': 'DEL'
+    , 'varanasi': 'VNS'
+    , 'mysore': 'MYQ'
+    , 'vadodara': 'BDQ'
+    , 'kolkata': 'CCU'
+    , 'dimapur': 'DMU'
+    , 'jodhpur': 'JDH'
+    , 'satna': 'TNI'
+    , 'jorhat': 'JRH'
+    , 'nasik': 'ISK'
+    , 'trivandrum': 'TRV'
+    , 'aurangabad': 'IXU'
+    , 'srinagar': 'SXR'
+    , 'bhavnagar': 'BHU'
+    , 'nagpur': 'NAG'
+    , 'rewa': 'REW'
+    , 'bellary': 'BEP'
+    , 'imphal': 'IMF'
 }

@@ -13,7 +13,9 @@ Features
 How to execute 
 ============== 
 
-To run the tests locally just do:
+Preq : Python 2.7 is installed.
+Download and copy the makemytrip.py into your new folder.
+To run it locally just do:
 
     $ python makemytrip.py Bangalore Jodhpur 18/10/2014
 

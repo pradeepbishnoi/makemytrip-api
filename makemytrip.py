@@ -95,6 +95,17 @@ class MakeMyTrip(object):
             print u"\u2982"*50
             #l=json.loads(x)
             
+    def getResultAsJson(self,flights_data):
+        #ToDo : Return the result as a JSON response.
+        pass
+        
+    def getResultCount(self,flights_data):
+        #ToDo : Return the number of flights matching the search criteria
+        pass
+        
+    def getSpecificAirlineFlights(self, airline, flights_data):
+        #ToDo : Return the flights of a specific Airline
+        pass
 
 if __name__=="__main__":
     #print sys.argv[0], sys.argv[1], sys.argv[2]
@@ -125,6 +136,7 @@ if __name__=="__main__":
     print "="*30
     bro = MakeMyTrip()
     url="http://flights.makemytrip.com/makemytrip/search/O/O/E/1/0/0/S/V0/" + origin + "_" + destination + "_" + my_date
+    #http://flight.yatra.com/air-search/dom2/trigger?type=O&viewName=normal&flexi=0&noOfSegments=1&origin=MAA&originCountry=IN&destination=JAI&destinationCountry=IN&flight_depart_date=02/10/2014&ADT=1&CHD=0&INF=0&class=Economy
     bro.browse(url)
     #bro.browse("http://flights.makemytrip.com/makemytrip/search/O/O/E/1/0/0/S/V0/BLR_JAI_05-02-2015")
     bro.read_line()
